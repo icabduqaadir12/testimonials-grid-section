@@ -35,10 +35,8 @@ Users should be able to:
 
 ### 📸 Screenshots
 
-<div align="center">
-  <img src="./design/desktop-design.jpg" alt="Desktop Screenshot" width="45%" />
-  <img src="./design/mobile-design.jpg" alt="Mobile Screenshot" width="45%" />
-</div>
+#### 💻 Desktop Design  
+![Desktop Screenshot](./design/desktop-design.jpg)
 
 ---
 
@@ -46,13 +44,13 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup  
-- SCSS (Sass)  
-- CSS custom properties  
-- Flexbox  
-- CSS Grid  
-- Mobile-first workflow  
-- GitHub Pages for deployment  
+- Semantic HTML5 markup
+- SCSS (Sass)
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- GitHub Pages for deployment
 
 ---
 
@@ -66,24 +64,24 @@ This project helped me improve my understanding of responsive layout techniques 
 
 In future projects, I’d like to:
 
-- Add scroll animations and transitions  
-- Try the same layout using a JavaScript framework like React  
-- Improve my SCSS architecture with partials and mixins  
+- Add scroll animations and transitions
+- Try the same layout using a JavaScript framework like React
+- Improve my SCSS architecture with partials and mixins
 
 ---
 
 ### 📚 Useful resources
 
-- [Frontend Mentor](https://www.frontendmentor.io/) – Challenge platform  
-- [CSS Tricks - A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) – Helped me structure the layout  
-- [Sass Basics](https://sass-lang.com/guide) – Official guide for learning SCSS  
+- [Frontend Mentor](https://www.frontendmentor.io/) – Challenge platform
+- [CSS Tricks - A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) – Helped me structure the layout
+- [Sass Basics](https://sass-lang.com/guide) – Official guide for learning SCSS
 
 ---
 
 ## 👤 Author
 
-- GitHub – [@icabduqaadir12](https://github.com/icabduqaadir12)  
-- Frontend Mentor – [@icabduqaadir12](https://www.frontendmentor.io/profile/icabduqaadir12)  
+- GitHub – [@icabduqaadir12](https://github.com/icabduqaadir12)
+- Frontend Mentor – [@icabduqaadir12](https://www.frontendmentor.io/profile/icabduqaadir12)
 
 ---
 
