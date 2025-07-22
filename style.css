@@ -1,0 +1,245 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(214, 17%, 92%);
+}
+@media (min-width: 1024px) {
+  body {
+    padding: 4rem 2rem;
+    overflow: hidden;
+  }
+}
+body main {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  grid-auto-flow: 1fr;
+}
+@media (min-width: 1024px) {
+  body main {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas: "daniel daniel jonathan kira" "jeanette patrick patrick kira";
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  body main {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas: "daniel daniel jonathan" " patrick patrick patrick" "jeanette kira kira";
+  }
+}
+body main .testimonial {
+  max-width: 400px;
+  border-radius: 5px;
+  padding: 2.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+@media (min-width: 1024px) {
+  body main .testimonial {
+    max-width: 100%;
+    padding: 2rem 2.5rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  body main .testimonial {
+    max-width: 100%;
+  }
+}
+body main .testimonial .profile-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+body main .testimonial .profile-header img {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid hsl(264, 82%, 80%);
+}
+body main .testimonial .profile-header .profile-info .profile-name {
+  font-size: 15px;
+  font-weight: 500;
+}
+body main .testimonial .profile-header .profile-info .profile-status {
+  font-size: 0.75rem;
+  font-weight: 600;
+  opacity: 0.8;
+}
+body main .testimonial .testimonial-body .testimonial-title {
+  font-size: 1.35rem;
+  margin-bottom: 1rem;
+}
+body main .testimonial .testimonial-body .testimonial-description {
+  font-size: 1.04rem;
+  font-weight: 500;
+}
+@media (min-width: 1024px) {
+  body main .testimonial .testimonial-body .testimonial-description {
+    font-size: 0.875rem;
+  }
+}
+body main .daniel {
+  background-color: hsl(263, 55%, 52%);
+}
+@media (min-width: 1024px) {
+  body main .daniel {
+    grid-area: daniel;
+    position: relative;
+  }
+  body main .daniel::before {
+    content: "🙶";
+    position: absolute;
+    top: -85px;
+    right: 3.5rem;
+    color: hsl(214, 17%, 92%);
+    opacity: 0.2;
+    font-size: 18rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  body main .daniel {
+    grid-area: daniel;
+  }
+}
+body main .daniel .profile-header .profile-name {
+  color: hsl(260, 100%, 95%);
+}
+body main .daniel .profile-header .profile-status {
+  color: hsl(264, 82%, 80%);
+}
+body main .daniel .testimonial-body .testimonial-title {
+  color: hsl(260, 100%, 95%);
+  font-weight: 500;
+}
+body main .daniel .testimonial-body .testimonial-description {
+  color: hsl(264, 82%, 80%);
+}
+body main .jonathan {
+  background-color: hsl(217, 19%, 35%);
+}
+@media (min-width: 1024px) {
+  body main .jonathan {
+    grid-area: jonathan;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  body main .jonathan {
+    grid-area: jonathan;
+  }
+}
+body main .jonathan .profile-header .profile-name {
+  color: hsl(214, 17%, 92%);
+  font-weight: 500;
+}
+body main .jonathan .profile-header .profile-status {
+  color: hsl(0, 0%, 81%);
+}
+body main .jonathan .testimonial-body .testimonial-title {
+  color: hsl(214, 17%, 92%);
+  font-weight: 500;
+}
+body main .jonathan .testimonial-body .testimonial-description {
+  color: hsl(214, 17%, 92%);
+  opacity: 0.8;
+  font-weight: 400;
+}
+body main .jeanette,
+body main .kira {
+  background-color: hsl(0, 0%, 100%);
+}
+body main .jeanette .profile-header .profile-name,
+body main .kira .profile-header .profile-name {
+  color: hsl(217, 19%, 35%);
+}
+body main .jeanette .profile-header .profile-status,
+body main .kira .profile-header .profile-status {
+  color: hsl(224, 10%, 45%);
+}
+body main .jeanette .testimonial-body .testimonial-title,
+body main .kira .testimonial-body .testimonial-title {
+  color: hsl(217, 19%, 35%);
+}
+body main .jeanette .testimonial-body .testimonial-description,
+body main .kira .testimonial-body .testimonial-description {
+  color: hsl(224, 10%, 45%);
+  opacity: 0.7;
+  font-weight: 700;
+}
+@media (min-width: 1024px) {
+  body main .jeanette {
+    grid-area: jeanette;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  body main .jeanette {
+    grid-area: jeanette;
+  }
+}
+@media (min-width: 1024px) {
+  body main .kira {
+    grid-area: kira;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  body main .kira {
+    grid-area: kira;
+  }
+}
+body main .patrick {
+  background-color: hsl(219, 29%, 14%);
+}
+@media (min-width: 1024px) {
+  body main .patrick {
+    grid-area: patrick;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  body main .patrick {
+    grid-area: patrick;
+  }
+}
+body main .patrick .profile-header .profile-name {
+  color: hsl(0, 0%, 81%);
+}
+body main .patrick .profile-header .profile-status {
+  color: hsl(0, 0%, 81%);
+}
+body main .patrick .testimonial-body .testimonial-title {
+  color: hsl(0, 0%, 81%);
+  font-weight: 500;
+  opacity: 0.98;
+}
+body main .patrick .testimonial-body .testimonial-description {
+  color: hsl(0, 0%, 81%);
+  opacity: 0.95;
+  font-weight: 400;
+}
+body footer {
+  margin-top: 1rem;
+}
+body footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+body footer .attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*# sourceMappingURL=style.css.map */
