@@ -27,15 +27,17 @@ body {
   background-color: $Grey-100;
 
   @media (min-width: 1024px) {
-    padding: 4rem 2rem;
+    padding: 5rem 2rem;
   }
 
   main {
-    max-width: 1200px;
+    max-width: 1000px;
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
     grid-auto-flow: 1fr;
+    margin: 0 auto;
+
 
     @media (min-width: 1024px) {
       grid-template-columns: repeat(4, 1fr);
@@ -55,7 +57,7 @@ body {
     }
 
     .testimonial {
-      max-width: 400px;
+      width: 100%;
       border-radius: 5px;
       padding: 2.5rem 3rem;
       display: flex;
@@ -64,8 +66,7 @@ body {
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 
       @media (min-width: 1024px) {
-        max-width: 100%;
-        padding: 2rem 2.5rem;
+        padding: 2rem;
       }
 
       @media (min-width: 768px) and (max-width: 1024px) {
@@ -76,6 +77,10 @@ body {
         display: flex;
         align-items: center;
         gap: 1rem;
+
+        @media (min-width: 1024px) {
+            gap: 0.8rem;
+        }
 
         img {
           width: 35px;
@@ -89,6 +94,11 @@ body {
           .profile-name {
             font-size: 15px;
             font-weight: 500;
+
+             @media (min-width: 1024px) {
+                font-size: 14px;
+            }
+
           }
 
           .profile-status {
@@ -103,6 +113,10 @@ body {
         .testimonial-title {
           font-size: 1.35rem;
           margin-bottom: 1rem;
+
+          @media (min-width: 1024px) {
+            font-size: 1.05rem;
+          }
         }
 
         .testimonial-description {
@@ -110,7 +124,8 @@ body {
           font-weight: 500;
 
           @media (min-width: 1024px) {
-            font-size: 0.875rem;
+            font-size: 0.70rem;
+            line-height: 1.4;
           }
         }
       }
